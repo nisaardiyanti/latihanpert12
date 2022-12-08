@@ -22,13 +22,13 @@ import com.example.android.devbyteviewer.domain.DevByteVideo
 
 
 /**
- * Database entities go in this file. These are responsible for reading and writing from the
- * database.
+ * Entitas basis data masuk dalam file ini. Ini bertanggung jawab untuk membaca dan menulis dari
+ * basis data.
  */
 
 
 /**
- * DatabaseVideo represents a video entity in the database.
+ * DatabaseVideo mewakili entitas video dalam database.
  */
 @Entity
 data class DatabaseVideo constructor(
@@ -40,8 +40,9 @@ data class DatabaseVideo constructor(
         val thumbnail: String)
 
 
+
 /**
- * Map DatabaseVideos to domain entities
+ * Petakan DatabaseVideos ke entitas domain
  */
 fun List<DatabaseVideo>.asDomainModel(): List<DevByteVideo> {
         return map {
